@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
         bar = (CircleBar) findViewById(R.id.bar);
         bar.setMaxstepnumber(100);
-//        int[] mColors = new int[]{0xFF123456, 0xFF369852, 0xFF147852};
-//        bar.setShaderColor(mColors);
-        bar.update(50, 3000);
+        int[] mColors = new int[]{0xFF123456, 0xFF369852, 0xFF147852};
+        bar.setShaderColor(mColors);
+        bar.update(100, 3000);
     }
 }

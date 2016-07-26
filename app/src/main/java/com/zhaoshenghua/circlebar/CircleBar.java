@@ -192,4 +192,15 @@ public class CircleBar extends View {
     public void setAnimationTime(int time) {
         anim.setDuration(time * stepnumber / stepnumbermax);// 按照比例设置动画执行时间
     }
+
+    /**
+     * 设置渐变色
+     *
+     * @param shaderColor
+     */
+    public void setShaderColor(int[] shaderColor) {
+        this.mColors = shaderColor;
+        Shader newShader = new SweepGradient(0, 0, mColors, null);
+        mColorWheelPaint.setShader(newShader);
+    }
 }
